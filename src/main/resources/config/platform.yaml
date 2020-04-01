@@ -1,0 +1,160 @@
+spring:
+  application:
+    name: platform
+
+serviceHost:
+  connection:
+    connectTimeoutInMins: 5
+    readTimeoutInMins: 5
+  security:
+    username: hap20
+    password: testing
+  benefitfacade: https://benefit-service-dev.ecnonprodapps.hap.org/benefit
+  memberfacade: https://member-service-dev.ecnonprodapps.hap.org/member
+  providerfacade: https://provider-service-dev.ecnonprodapps.hap.org/provider
+  claimfacade: http://claims-service:8080/claim
+  authfacade: https://authservice.ecnonprodapps.hap.org/auth
+  utilfacade: https://util-service-dev.ecnonprodapps.hap.org/util
+  referralfacade: http://referral-service:8080/referral
+  ssofacade: http://sso-service:8080/hapSso
+  
+cache:
+  scheduledClearance:
+    intervalInMilliSeconds: 3600000
+    initialDelayInMilliSeconds: 3600000
+  
+clarity:
+  eCardUrl: https://uat.clarityssi.net/ECard/HAPHealthECardServlet
+  proxyHost: 67.37.199.162
+  proxyPort: 8082
+  flag: N
+  clarityURL: https://uat.clarityssi.net/ECard/HapHealthShopperSBCServlet
+  clarityEcardURL: https://ctest.clarityssi.net/ECard/HAPHealthECardServlet
+  clarityProxyHost: 67.37.199.162
+  clarityProxyPort: 8082
+  clarityEnabled: Y
+  clarityFlag: N
+  
+pingConfigProperties: 
+  pingSSOServer: https://ecdevauth.hap.org:20443
+  pingSSOServerNew: https://ecstageauth.hap.org:20443
+  hAPDomainName: hAPDomainName
+  ssoPartnerEntryUrisMap: /postToComerica\=comerica
+  pingSSOServerPaybill: https://172.16.203.226:9031
+  hapSessionTimeoutPageUrl: sessionTimeout.php
+  pingAdapters:
+    healthEquityAdapter:
+      spId: P_HAP
+      instanceId: HEquityAgentLess
+      user: heqAgent
+      pwd: heqAgent123
+    fitnessSurveyAdapter: 
+      spId: https://review.silverandfit.com/saml/hap/serviceprovider.aspx
+      instanceId: AshAgentLess
+      user: ashAgent
+      pwd: ashAgent123
+    healthSparqAdapter:
+      spId: sp_hap
+      instanceId: HSparqAgentLess
+      user: hsqAgent
+      pwd: hsqAgent123
+      relayStateUrl: https://haptestweb.healthsparq.com/healthsparq/
+    webMDAdapter:
+      spId: WebMD
+      instanceId: WebMDAgentLess
+      user: webmdAgent
+      pwd: webmdAgent123
+    esiAdapter:
+      spId: https://wwwuat.express-scripts.com
+      instanceId: ESIAgentLess
+      user: esiAgent
+      pwd: esiAgent123
+      relayStateUrl: https://wwwuat.express-scripts.com?ClientId=
+    callidus:
+      spId: https://haptest4.callidusinsurance.net/ICM
+      instanceId: CallidusAgentLess
+      user: callidusAgent
+      pwd: callidusAgent123
+    paybill:
+      spbillpayid: https://mo.paybill.com/ssg/sp/remote
+      billpayAdapterInstanceId: BillPayAgentLess
+      billpayAdapterPwd: billPayAgent123
+      currentEnvironment: dev
+      bpaInvoiceHapClientId: 1318
+      bpaInvoiceHapTransactionType: I
+      bpaInvoiceAhlClientId: 1212
+      bpaInvoiceAhlTransactionType: I
+      bpaNoInvoiceHapClientId: 1337
+      bpaNoInvoiceHapTransactionType: I
+      bpaNoInvoiceAhlClientId: 1336
+      bpaNoInvoiceAhlTransactionType: I
+      billpayAdapterUser: billPayAgent
+    comerica:
+      idpComericaId: www.paybill.com 
+      comericaAdapterInstanceId: ComericaSPAgentless
+      comericaAdapterUser: ComericaIdpAgent
+      comericaAdapterPwd: ComericaIdpAgent123
+    colibrium:
+      spColibriumId: Colibrium
+      colibriumAdapterInstanceId: colibriumAgentLess
+      colibriumAdapterUser: colibriumAgent
+      colibriumAdapterPwd: clbrm123
+      paymentInstanceId: ColibriumPaymentAgentLess
+      paymentAdapterUserId: colibriumPaymentAgent
+      paymentAdapterPwd: clbrmPayment123
+      spPaymentId: Colibrium-payment
+    tuoAdapter:
+      tuoId: Tuo
+      instanceId: ColibriumSPAgentless
+      user: colibriumSpAgent
+      pwd: colibriumSpAgent123
+      
+webServerURL:
+  mqfPDFWebServerUrl: http://tweb1.hap.org.1081/
+
+optumURL:
+  optumNavigateUrl: https://stage-hap.providerlookuponlinesearch.com/gateway
+  goToURL: https://stage-hap.providerlookuponlinesearch.com/gateway
+  postBackURL: https://dportal.hap.org/membernew/memberportal/pcp/pcpUpdate
+  securityURL: https://dportal.hap.org/membernew/memberportal/pcp/pcpUpdate
+  
+ldapConfig:
+  ldapProviderUrl: dap://dldap1.hap.org:10389
+  ldapFactoryClassName: com.sun.jndi.ldap.LdapCtxFactory
+  ldapUser: cn=Directory Manager
+  ldapPwd: admin100
+  ldapUserprofileLookupRootContext: o=hap.org
+  ldapMaxContextPoolSize: 1
+  ldapContextWaitTimeout: 30000
+  ldapMemberUserprofileDn: uid={0}, ou=Members, ou=External, o=hap.org
+  ldapProspectUserprofileDn: uid={0}, ou=ProspectMbr, ou=External, o=hap.org
+
+memberSolrSearch:
+  endpointUrl: ecnonprodsolr.hap.org/solr/providerportal
+  username: solrReader
+  password: Digital123
+  host: https://
+
+encryptDecrypt:
+  requireEncryptionDecryption: Y
+  requireUserIdFlag: Y
+  numberOfBytesPrivatekey: 32
+  defaultPrivateKey: avHyUxG3Z6sWRa/rsC0Vt3ZimwAfcAsa
+
+credentialsEat:
+  username: happortal_eat 
+  password: Today123 
+
+iPerception:
+  enabled: false
+  script: >-
+    /*Copyright 2011-2015 iPerceptions, Inc. All rights reserved. Do not distribute.iPerceptions provides this code 'as is' without warranty of any kind, either express or implied. */ 
+    window.iperceptionskey = '5eb305b5-9c52-4efd-a170-3aab551f3f11';
+    (function () {var a = document.createElement('script'), b = document.getElementsByTagName('body')[0]; a.type = 'text/javascript'; a.async = true;a.src = '//universal.iperceptions.com/wrapper.js';b.appendChild(a);})();
+    
+domainUrl:
+    baseUrl: https://dportal.hap.org
+
+directoryList:
+    dirList: Training and Guidance Resources,Producer Tools
+    dirPath: C:/Users/rpapiset/appl/www/pdf/producer/

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ccs
+
+application:
+  ccs:
+    documentumAsURLEOBQuery: SELECT * FROM HAP_CLAIMS_PAYMENTS WHERE LETTER_TYPE = 'EOB'  AND ECOM_DISPLAY_FLAG = 'Y' AND ANY CLAIM_NUMBER = 
+    allEOBDocumentumSearchQuery: SELECT claim_number FROM HAP_CLAIMS_PAYMENTS WHERE LETTER_TYPE = 'EOB'  AND ECOM_DISPLAY_FLAG = 'Y' AND ANY CLAIM_NUMBER in
+    allEOBBySubIdDocumentumSearchQuery:  SELECT claim_number FROM HAP_CLAIMS_PAYMENTS WHERE LETTER_TYPE = 'EOB'  AND ECOM_DISPLAY_FLAG = 'Y' AND SUBSCRIBER_ID in
+    eobUrl: /ccs/getEOBPDF?claimNumber=
+    claimDetailUrl: /ccs/getClaimDetail?eobEmail=N&claimNumber=
+    claimsdefaultFromDate: 1

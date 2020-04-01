@@ -1,0 +1,89 @@
+spring:
+  application:
+    name: bpa
+encryptDecrypt:
+  requireEncryptionDecryption: Y
+  requireUserIdFlag: Y
+  numberOfBytesPrivatekey: 32
+  defaultPrivateKey: avHyUxG3Z6sWRa/rsC0Vt3ZimwAfcAsa
+samlAttribute:
+  colibriumInboundAttributes: APTC_Amount,Zip_Code,Middle_Name,Proposed_Coverage_Eff_Date,Broker_ID,Street_Name_2,Contact_Email_Address,Additional_Information,Response_URL,City_Name,Assigned_QHP_Identifier,Street_Name_1,TIN_Identification,Suffix_Name,Total_Amount_Owned,Total_Amount_Owed,HAP_Payment_ID,Partner_Assigned_Consumer_ID,TXN_Source,Last_Name,Prospect_Member_ID,FFE_Subscriber_ID,Market_Indicator,State,First_Name,Premium_Amount_Total,Payment_Transaction_ID
+  comericaInboundAttributes: AccountNumber
+ssoConstants:
+  ssoPartnerTuo: TUO
+  userGroup: UserGroup
+  uniqueType: UniqueIdType
+  attrFirstName: FirstName
+  attrLastName: LastName
+  attrReqPartner: reqSSOPartner
+  ssoPartnerFfm: FFM
+  ssoPartnerHcentive: tuo
+  ssoXappRefObject: XAPPREF
+  billpayWorkflowStateCookie: BPAWorkflowState
+  cookieDomainAttrName: HAPDomainName
+  agent: Agents
+  employee: Employees
+  prospectFfmLoginPage: /ssoportal/bpa/ex/pmRegistration
+  prospectLoginPage: login.html
+  autopayInvoiceUri: /bpa/showDEIAutoPayInvoice
+  comericaSuccessUri: /bpa/showComericaSuccess
+  comericaFailureUri: /bpa/showComericaError
+  referencePage: Result
+  transactionStatus: transactionStatus
+  bpaHomeUri: /bpa/showbpahome
+  bpaAutopayInvoiceUri: /bpa/ex/showDEIAutoPayInvoice
+  bpaDeiFfePaymentFailureUri: /bpa/showDeiFfePaymentFailure
+  targetUriBillPayInvoice: /bpa/showBpaHome
+  targetUriDefault: /bpa/showBpaHome
+  hcentivereturnurl: /sso/ex/directEnrollment/postPaymentResponseToColibrium
+  acsUrlEndPoint: /sp/ACS.saml2
+  paymentSuccessFlag: Y
+  ffeDummyCustomerId: 99999
+  phixDummySubId: 
+  paramRelayState: RelayState
+  RelayStateLifeEvents: lifeEvents
+  RelayStateRenewals: renewals
+  paybillFailureTitle: Pay Bill
+  paybillFailureMsg: An error that occurred while processing your Bill Pay request. Please try again later. If the problem continues, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>April 1 through September 30:,Monday through Friday 8 a.m. to 8 p.m.</br> October 1 through March 31:,Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans:,	(800) 944-9399 (TTY:, 711)
+  billpaySetupFfailureTitle: Bill Pay Account Set up
+  billpaySetupFailureMsg: An error occurred while processing your account maintenance request. Please try again later. If the problem continues, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>April 1 through September 30:,Monday through Friday 8 a.m. to 8 p.m.</br> October 1 through March 31:,Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans:,	(800) 944-9399 (TTY:, 711)
+  billpayHistoryFailureTitle: Bill Pay Transactional Summary
+  billpayHistoryFailureMsg: An error occurred while processing your Transaction Summary request.  Please try again later. If the problem continues, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>April 1 through September 30:,Monday through Friday 8 a.m. to 8 p.m.</br> October 1 through March 31:,Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans:,	(800) 944-9399 (TTY:, 711)
+  billpayDeiFfeFailureTitle: Pay Bill Failure
+  billpayDeiFfeFailureMsg: Because you chose not to make a payment by credit/debit card or Electronic Funds Transfer, a paper invoice will be mailed to you. Your first payment will be due before your effective date. Your coverage will start on your effective date once that payment is successful. You will receive a welcome kit and ID card prior to your coverage effective date.
+  prospectsubjectemailconfirmationforautopaysetup: Your HAP Personal Alliance premium is confirmed for auto pay
+  prospectsubjectemailconfirmationforendingautopay: Auto pay for your HAP Personal Alliance premium is confirmed to end
+  prospectsubjectemailconfirmationforpaperinvoicing: Your HAP Personal Alliance premium is confirmed for paper invoicing
+  prospectsubjectemailconfirmationforendingpaperinvoicing: Paper invoicing for your HAP Personal Alliance premium is confirmed to end
+  prospectemailconfirmationforautopaysetup: Your request to set up automatic payments for your HAP Personal Alliance® premium is confirmed.</br>If you have already paid this month's premium, Auto Pay will take effect on your next due date. If you have not made your monthly payment, please log on to hap.org and access Bill Pay to make an initial one-time payment.</br></br>If you are getting this email and have not requested to set up Auto Pay, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  prospectemailconfirmationforendingautopay: Your request to end automatic payments for your HAP Personal Alliance® premium is confirmed.</br> Please log into the hap.org member portal and access Bill Pay to manage all future payments.</br></br>If you are getting this email and have not requested to end Auto Pay, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  prospectemailconfirmationforpaperinvoicing: Your request to receive a paper invoice for your HAP Personal Alliance® premium is confirmed. The change will take effect with your next invoice and future invoices.</br></br>If you are getting this email and have not requested to receive paper invoices, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  prospectemailconfirmationforendingpaperinvoicing: Your request to stop receiving paper invoices for your HAP Personal Alliance® premium is confirmed.</br></br>If you are getting this email and have not requested to stop receiving paper invoices, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  subjectemailconfirmationforautopaysetup: Your HAP Personal Alliance premium is confirmed for auto pay
+  subjectemailconfirmationforendingautopay: Auto pay for your HAP Personal Alliance premium is confirmed to end
+  subjectemailconfirmationforpaperinvoicing: Your HAP Personal Alliance premium is confirmed for paper invoicing
+  subjectemailconfirmationforendingpaperinvoicing: Paper invoicing for your HAP Personal Alliance premium is confirmed to end
+  emailconfirmationforautopaysetup: Your request to set up automatic payments for your HAP Personal Alliance premium is confirmed.</br>If you have already paid this month's premium, Auto Pay will take effect on your next due date. If you have not made your monthly payment, please log on to hap.org and access Bill Pay to make an initial one-time payment.</br></br>If you are getting this email and have not requested to set up Auto Pay, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  emailconfirmationforendingautopay: Your request to end automatic payments for your HAP Personal Alliance premium is confirmed.</br> Please log into the hap.org member portal and access Bill Pay to manage all future payments.</br></br>If you are getting this email and have not requested to end Auto Pay, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  emailconfirmationforpaperinvoicing: Your request to receive a paper invoice for your HAP Personal Alliance premium is confirmed. The change will take effect with your next invoice and future invoices.</br></br>If you are getting this email and have not requested to receive paper invoices, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  emailconfirmationforendingpaperinvoicing: Your request to stop receiving paper invoices for your HAP Personal Alliance premium is confirmed.</br></br>If you are getting this email and have not requested to stop receiving paper invoices, please call a Customer Service specialist at one of the phone numbers listed during the hours below. We are pleased to offer expanded Saturday hours during open enrollment.</br></br>\tApril 1 through September 30\:,	Monday through Friday 8 a.m. to 8 p.m.</br>\tOctober 1 through March 31\:,	Monday through Friday 8 a.m. to 8 p.m.; Saturday 8 a.m. to noon</br></br>HMO Plans\:,	(800) 759-3436 (TTY:, 711)</br>PPO Plans\:,	(800) 944-9399 (TTY:, 711)</br></br>Thank you\!
+  envemailflag: N
+  envdefaultemail: uat13.test@gmail.com
+  emailfromaddress: account_status@hap.org
+  mailsmtphost: mail.hap.org
+  currentenv: dev
+  emailrequired: Please enter your email address.
+  emailmismatch: New email different from re-entered value.
+  emailinvalid: Please enter a valid e-mail.
+  lengthInvalid: Please enter the member's new 11 digit Member ID.
+  billpayNotSetup: This subscriber is not set up to use Bill Pay.  The subscriber must register on hap.org, select Pay My Bill and enter their financial information.
+  billpayUniqueIdNotMatch: This subscriber has more than one Comerica ID, please open a ticket for AD Digital to resolve.
+  billpayPaymentNotAvailable: Auto payment is only available for subscribers with individual coverage.
+  hapNumberNotNumeric: The HAP ID you entered is non-numeric.
+  noResultsFound: The search returned 0 results.
+  redirectDoubleSlash: ../../
+  redirectThreeSlash: ../../../
+  redirectFourSlash: ../../../..
+  redirectFiveSlash: ../../../../..
+  maxMembersTotal: 250
+  maxSubscribesTotal: 250

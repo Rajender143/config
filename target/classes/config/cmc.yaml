@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cmc
+    
+constants:
+  inboxFlag: 1
+  sentMessageFlag: 2
+  MessageType: Created
+  
+  

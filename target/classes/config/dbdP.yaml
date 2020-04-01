@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: dbdp
+    
+application:
+  dbdp:
+   SBC_LETTER_TYPE: letter_type
+   SBC_DOC_TYPE: hap_benefit_summaries
+   SBC_MED_PRODUCT_CODE: medical_product_code
+   SBC_RX_PRODUCT_CODE: rx_product_code
+   SBC_REPORT_YEAR: report_year
+   SBC_VALUE: SBC
+   MEDICARE_MEMBER: MA
+   SBC_PDF_FILE_LOCATION: contracts/commercial/SBC/
+   DBD_PDF_HEADER_PROPERTIES: Content-disposition~inline; filename=HAP_SBC.pdf!Cache-Control~max-age=1!Accept-Ranges~none
+   MAIL_FROM_ADDRESS: noreply@hap.org
+   MAIL_SMTP_HOST: mail.hap.org
+   DBD_MAIL_ADDRESS_CLIENT_SERVICES_TO: epaul@hap.org,ttorres@hap.org
+   DBD_MAIL_ADDRESS_CLIENT_SERVICES_CC: kraya@hap.org
+   SUMMARY_NOT_FOUND_SUBJECT: Benefit Summary Admin - Missing summary
+   SUMMARY_NOT_FOUND_BODY: TO whom it may concern, Benefit Summary searched by 
+   SUMMARY_NOT_FOUND_BODY_NEXT:  is not found in the repository. Appropriate area in our organization has been informed of the missing summary.\n\nThis is a system generated email, please do not reply.
+   

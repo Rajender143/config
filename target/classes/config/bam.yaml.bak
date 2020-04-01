@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bam
+
+bamLink:
+  bamLogoLink: <img src="https://www.hap.org/-/media/images/logos/hap/new-newspaper-logo-nowhitespace.svg" class="hap-brand-logo">

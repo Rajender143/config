@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: mea
+
+application:
+  mea:
+    membSearchGeneralInfo: Searching for dependents you can enter full member id(11 digits) or the first 9 digits to get all dependents for a subscriber
+    providerNoMeaAccess: ProviderNoMeaAccess
+    invalidHapNumber: Member ID is invalid
+    tpaNotAuthorized: As a TPA user, you are not authorized to view contracts for the member IDs indicated
+    noContractsFound: No eligibility information was found for the entered member ID(s) for the selected date of service
+    someContractsFound: No eligibility information was found for the entered member ID(s) and for the selected date of service
+    systemNotAvailable: System is currently not available. Please try again later
+    benefitSummaryUrl: /membernew/eligibility/dbd/benefitSummary?selectedContrivedKey=na
+    medicareMember: MA
+    meaPdf: Content-disposition~inline; filename=MEA_PDF.pdf!Cache-Control~max-age=1!Accept-Ranges~none
+    DOC_SUMMARY_NOT_FOUND_EMPLOYER: The benefit summary you have selected is currently unavailable.  Please visit the help page or for questions about missing benefit summary call 1-866-766-4661 for further assistance.
+    NOT_APPLICABLE: N/A
+    display_hedis_gaps: Y
+    NOT_AVAILABLE: Not Available
+    mhm_app_name_in_ldap: MHM
+    hcc_app_name_in_ldap: HCC
+    error_invalid_provider: Please enter a valid Provider NPI.
+    NonNumbericError: The HAP ID(s) highlighted in red are non-numeric.  Please correct invalid entries and click on Submit.
+    InvalidLengthError: Please enter the member's 11-digit member ID number or the first 9 digits of the subscriber ID to get all dependents on a contract.If you do not have the ID numbers, select the magnifying glass and search by name and date of birth.

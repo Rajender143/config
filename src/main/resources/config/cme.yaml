@@ -1,0 +1,69 @@
+
+spring:
+  application:
+    name: cme
+    
+application:
+  cme:
+    NOT_AVAILABLE: Not Available
+    NO_PCP_TEXT: No PCP on record
+    DBD_BENEFIT_SUMMARY_URL: /dbd/benefitSummary?selectedContrivedKey=
+    BSDL_TYPE_RTL1: RTL1
+    BSDL_TYPE_RT1A: RT1A
+    BSDL_TYPE_RTL2: RTL2
+    BSDL_TYPE_RTL3: RTL3
+    BSDL_TYPE_RTL4: RTL4
+    BSDL_TYPE_RTL5: RTL5
+    BSDL_TYPE_SPCL: SPCL
+    BSDL_TYPE_SPC2: SPC2
+    SUBJECT_DEDUCTIBLE: A deductible is a fixed dollar amount during the benefit period - usually a year - that an insured person pays before the insurer starts to make payments for covered medical services.  Yes, indicates that the deductible must be satisfied before the copay/coinsurance is collected.  Deductible information can be found below.
+    VISION_DISCLAIMER: Member is eligible for glasses/contact lenses a year from this date.
+    HEARING_DISCLAIMER: This is the date of service for the last claim processed by HAP for the hearing benefit. This does not indicate that the member currently has the hearing benefit as the claim could have been paid under a previous benefit period.
+    GLASSES_CONTACT_LENSES: Review more detailed Summary of Benefits and Coverage for information on benefit limits.
+    GLASSES_CONTACT_LENSES_MEDICARE: Review more detailed information by going to the My Plan Tab and viewing your ANOC/EOC.
+    DEDUCTIBLE_LABEL: For more information on deductibles, please see the definitions in Help.
+    LIMIT_LABEL: This amount shows the maximum out-of-pocket amount allowed.
+    REMAINING_LABEL: This amount shows the remaining out-of-pocket amount available.
+    PAID_LABEL: This amount shows your combined prescription and medical out-of-pocket amount(s) paid. To see the separate amounts, select the question mark for the specific prescription and medical paid amount, if applicable.
+    BSDL_TYPE_OVP: OVP
+    BSDL_TYPE_O2VP: O2VP
+    BSDL_TYPE_OVS: OVS
+    BSDL_TYPE_O2VS: O2VS
+    BSDL_TYPE_UC: UC
+    BSDL_TYPE_U2C: U2C
+    BSDL_TYPE_ER: ER
+    BSDL_TYPE_E2R: E2R
+    BSDL_TYPE_HEARING_TIER1: HAID
+    BSDL_TYPE_HEARING_TIER2: H2ID
+    BSDL_TYPE_PREVENTIVE_VISIONEXAM_TIER1: PVVS
+    BSDL_TYPE_PREVENTIVE_VISIONEXAM_TIER2: P2VS
+    BSDL_TYPE_VISION_OFFICE_TIER1: VSOV
+    BSDL_TYPE_VISION_OFFICE_TIER2: V2SO
+    BSDL_TYPE_VISION_GLASSES_QHPADULT: VAHD
+    BSDL_TYPE_VISION_GLASSES_BENEFITMAX: VBMX
+    BSDL_TYPE_VISION_GLASSES_TIER1: VSHD
+    BSDL_TYPE_VISION_GLASSES_TIER2: V2HD
+    BSDL_TYPE_VISION_GLASSES_BENEFITMAX_TIER1: VBMX
+    BSDL_TYPE_VISION_GLASSES_BENEFITMAX_TIER2: V2MX
+    NOTCOVERED: NOT A COVERED SERVICE
+    NO_CLAIM_ON_FILE: No claim on file
+    TIER: Tier
+    IN_NETWORK: In-Network
+    OUT_OF_NETWORK: Out-Of-Network
+    II: II
+    IO: IO
+    FI: FI
+    FO: FO
+    TIER1_IN_NETWORK: Tier 1 (In-Network)
+    TIER2_IN_NETWORK: Tier 2 (In-Network)
+    TIER3_OUT_NETWORK: Tier 3 (Out-Of-Network)
+    MIPHARMACY: Covered benefit, zero copay
+    MIHEARING: Covered benefit, $0 copay/coinsurance/deductible
+    NONMI_TEXT: Copays for Healthy Michigan Plan members are not collected by providers or health plans. <br/> MDHHS collects copays directly from you.
+    BSDL_TYPE_TELE: TELE
+    BSDL_TYPE_T2LE: T2LE
+    memberIDcardUrl: ../../memberportal/gogreen/getMemberIDcard?contrivedKey=
+    rxcoverageSSOLink: ../../ssoportal/sso/goToAlertPage
+    hraSSOLink: ../../ssoportal/sso/redirectToHealthEquity
+    hsaSSOLink: ../../ssoportal/sso/redirectToHsaBank
+    HIPAAText: You may only view information for yourself and dependents under the age of 18

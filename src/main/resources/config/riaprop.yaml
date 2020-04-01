@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: riaprop
+  
+riaMessage:
+  mihealthLink: https://cm.hap.org/emp/hap-empowered/mi-health-link/member
+  medicaidLink: https://cm.hap.org/emp/hap-empowered/medicaid/member
+  invalidDaterange:
+    errorinvaliddaterange: Please modify the date range entered. Referrals and prior authorizations are only available for the past three years.
+  errorMessage:
+    notViewableAuthorized: AGE
+    notViewableCigna: CIGNA
+    notViewableTpa: TPA
+    notViewableAgeMessage: The selected member is currently active. However, due to HIPAA regulations, you may only view information for yourself and dependents under the age of 18.
+    notViewableTpaMessage: Authorizations for HAP Preferred PPO enrollees are not available on the HAP Web site. Please contact 
+    notViewableCignaMessage: Authorizations for CIGNA plans are not available through this system. Please contact CIGNA at
+    noAuthorizationsfound: There are no referrals or prior authorizations available for the specified dates above.
+    noReferralDetailInfo: Referral detail information could not be retrieved for this referral.  Please contact provider relations.
+    errorProviderNotAuthorized: You are not authorized to view this referral either because you are not on the referral or the member on this referral is not assigned to you.

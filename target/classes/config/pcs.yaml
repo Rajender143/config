@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: pcs
+
+forTrustedHPURL: https://secure.healthx.com/s/TrustedHPHistoricalInformation
+moreThan500ClaimsFound: Your search criteria has returned more than 500 rows. Only the first 500 rows will be displayed. Please modify your search criteria (modify the Date Range or enter a Member ID or Patient Account Number) to view rows beyond the ones currently displayed. Also, when clicking on the column headings, a new search will be done. 
+midwestClaimURL: https://web2test.midwesthealthplan.com/ProviderClaimList.aspx
+accesDeniedVendor: This claim does not belong to the selected provider. Please enter a correct claim number.
+accessDeniedProvider: This claim does not belong to you. Please enter a correct claim number.
+pegaDocType: File
+
+errorKey:
+  noRowsFound: information.no.rows.found
+  noClaimsFound: no.claims.found.err
+  maxRowsReturned: max.rows.returned
+  invalidMember_Id: error.inavlid.memberid
+  invalidFromDate: error.invalid.fromdate.found
+  invalidToDate: error.invalid.todate.found
+  invalidFromToDate: error.invalid.fromtodate.found
+  
+  
+  
+errorMessage:
+  invalidClaimNum: Please Enter valid ClaimNumber
+  invaliddate: From Date and To Date Required  
+  invalidMemberId: Please enter a valid Member Id
+  noRowsFound: No claims data found for the search criteria.
+  noClaimsFound: No Claims Found
+  maxRowsReturned: Maximum rows to return
+  invalidMember_Id: Invalid MemberID
+  invalidFromDate: Invalid From Date
+  invalidToDate: Invalid To Date
+  invalidFromToDate: From date cannot be greater than to date.
+  noAppealFound: No Appeals found
+  noAppealFoundForSearch: There are no appeals available for the entered filter criteria 
+    
+  
+  

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: navigation
+  
+portallist:
+  portalDetails:
+    - name: MemberPortal
+      code: MEM
+      sourceDetails:
+        - name: MemberDetail
+          shortName: obj
+          enable: true
+          platformServiceHost: serviceHost.memberfacade
+          servicePathServiceRest: member.cva.getMemberObj
+          restDTOClass: org.hap.dto.member.MemberMapping
+          inputAttributeDetails:
+            - name: memberId
+              userProfileReference: userId
+              value:
+    - name: EmployeePortal
+      code: EMP
+      sourceDetails:
+        - name: UserProfile
+          shortName: userProfile
+          enable: true
+          restDTOClass: org.hap.portal.security.UserProfile
+    - name: AgentPortal
+      code: AGT

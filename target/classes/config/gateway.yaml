@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gateway
+  
+gatewayMessage:
+  errorMessage:
+    eatIssue: EAT issue. Please try again after some time. If problem still persists, Please contact the helpdesk.
+    loginIssue: Please try again after some time. If problem still persists, Please contact the helpdesk.
+    userNotFound: The username or password entered does not match our records.  Please try again.
+    userNotEntered: Please enter the user id.
+    passwordNotEntered: Please enter the password.
+    EATNotAllowed: You do not have EAT Access. Please contact the helpdesk.

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: cmc
+    
+systemError:
+  default: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>  
+  Members: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>
+  Providers: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/providers/contact-info" tabindex="0">contact us.</a>
+  Employees: System is currently unavailable. If the problem persists, please contact the HAP IT Service Desk.
+  Agents: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/agents/contact" tabindex="0">contact us.</a>
+  Employers: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/employers/contact" tabindex="0">contact us.</a>
+  ProspectMbr: System is currently unavailable. If the problem persists, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>
+forbiddenError: 
+  default: You are not authorized to access this page.  Please <a href="https://www.hap.org/contact" tabindex="0">contact us</a> if you feel you have received this message in error.
+  Members: You are not authorized to access this page.  Please <a href="https://www.hap.org/contact" tabindex="0">contact us</a> if you feel you have received this message in error.
+  Providers: You are not authorized to access this page.  Please <a href="https://www.hap.org/providers/contact-info" tabindex="0">contact us</a> if you feel you have received this message in error.
+  Employees: You are not authorized to access this page. If the problem persists, please contact the HAP IT Service Desk.
+  Agents: You are not authorized to access this page.  Please <a href="https://www.hap.org/agents/contact" tabindex="0">contact us</a> if you feel you have received this message in error.
+  Employers: You are not authorized to access this page.  Please <a href="https://www.hap.org/employers/contact" tabindex="0">contact us</a> if you feel you have received this message in error.
+  ProspectMbr: You are not authorized to access this page.  Please <a href="https://www.hap.org/contact" tabindex="0">contact us</a> if you feel you have received this message in error.
+notAvailableError:
+  default: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>
+  Members: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>
+  Providers: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/providers/contact-info" tabindex="0">contact us.</a>
+  Employees: The page you are looking for cannot be found. If you still can’t find it, please contact the HAP IT Service Desk.
+  Agents: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/agents/contact" tabindex="0">contact us.</a>
+  Employers: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/employers/contact" tabindex="0">contact us.</a>
+  ProspectMbr: The page you are looking for cannot be found. If you still can’t find it, please <a href="https://www.hap.org/contact" tabindex="0">contact us.</a>  

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hedis
+
+application:
+  hedis:    
+    systemNotAvailable: System is currently not available. Please try again later
+    errorTypeOfGap: Please select a type of gap from the dropdown
+    searchBase: o=hap.org
+    documentumNotAvailable: Unable to upload Document to Documentum.Please try again.

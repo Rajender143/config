@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cca
+
+application:
+  cca:
+    defaultProviderId: 99999
+    magicNumberConstantA: 1366
+    magicNumberConstantC: 150889
+    magicNumberConstantM: 714025

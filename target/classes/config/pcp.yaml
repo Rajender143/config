@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: pcp
+ 
+application:
+  pcp:
+    futureContractsFound: Future contract is found for the entered member ID(s) for the selected date of service.
+    pcpRejectedError: Request could not be completed due to service error.
+    invalidProviderMemberId: PCP cannot be assigned because member and provider information could not be validated.
+    memberNotAactive: PCP cannot be assigned because the member is not currently active.
+    notPcp: PCP cannot be assigned because the provider is not a PCP in the member's network.
+    pcpNotAcceptingNewPatients: PCP cannot be assigned because the provider is not accepting new patients.
+    pcpNotInNetwork: PCP cannot be assigned because the member and provider's network do not match.
+    pcpAgeRequirementNotMet: PCP cannot be assigned due to member's age.
+    partialSuccess: Request could not be completed due to failed internal validation checks.
+    systemError: Request could not be completed due to system error.
+    midwestPcpDocterRedirectUrl: /pcp
+    midwestPcpDentistRedirectUrl: https://www.providers4you.com/hmp
+    midwestPcpHearRedirectUrl: http://www.nationshearing.com/hapempowered
+    midwestHealthAssessmentRedirectUrl: /ssg/healthAssessment/postLoginToHealthAssessment?goTo=assessment
+    midwestIstriveRedirectUrl: /ssg/healthAssessment/postLoginToHealthAssessment?goTo=homepage
+    midwestEsiRedirectUrl: /ssg/goToMPCSite.do
+    midwestChangePcp: /pcp
+    medicaidText: You are leaving a Medicaid-approved site. 
+    medicareText: You are leaving a Health Alliance Plan's web site. 
+    commercialText: You are leaving a Health Alliance Plan's web site. 

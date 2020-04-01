@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: raa
+ 
+encryptDecrypt:
+  requireEncryptionDecryption: Y
+  requireUserIdFlag: Y
+  numberOfBytesPrivatekey: 32
+  defaultPrivateKey: avHyUxG3Z6sWRa/rsC0Vt3ZimwAfcAsa
+
+midwestDocUrl:  https://web2test.midwesthealthplan.com/ProvDocuments.aspx
+
+errorKey:
+  validatemember:  validate.member
+  datenotinrange:  error.search.dates.not.in.range
+  datesareblank:  error.search.dates.are.blank
+  memberidrequired: error.member.id.required 
+  memberidinvalid: error.invalid.member.id
+  memberidnotnumeric:  error.member.id.not.numeric 
+  searchdatanotprovided: error.required.search.data.notprovided
+  vendoridrequired:  error.vendor.id.required
+  paymentnumrequired:  error.payment.number.required
+  patientaccnumrequired:  error.patient.account.number.required
+  
+
+errorMessage:
+  validatemember:  Please enter the member's 11 digit Member ID. If you do not have the Member ID, please click on the magnifying glass to search for the member.
+  datenotinrange: Please select dates that are less than 18 months apart. 
+  datesareblank:  Please enter from and to search dates.
+  memberidrequired:  Please enter a Member ID.
+  memberidinvalid:  The Member ID you entered is not valid.
+  memberidnotnumeric:  Please enter a valid Member ID.
+  searchdatanotprovided:  Please enter search criteria.
+  vendoridrequired:  Please enter a Vendor ID.
+  paymentnumrequired:  Please enter a payment number.
+  patientaccnumrequired:  Please enter a patient account number.
+  
+cognosDetails:
+  enableCognosNewReportForPdf: N
+  enableCognosNewReportForXls: N
+  reportPathNew: /content/folder[@name='Information Technology']/folder[@name='Application Development and Support']/folder[@name='Batch Reports']/report[@name='Remittance Advice_PDF']
+  cognosUrlForRaa: /hapbiec/cgi-bin/cognosisapi.dll
+  raPdfExcelHeader: Cache-Control~must-revalidate,post-check=0,pre-check=0!Pragma~public!Accept-Ranges~none
+  
+  

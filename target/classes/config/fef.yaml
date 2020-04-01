@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: fef
+    
+application:
+  fef:
+   subject: Exception Request
+   messsageRequest: Thank you. We received your request.  We will follow up with your doctor.  Then we will send you and your doctor a letter with our decision.
+   inboxRequest: Request for formulary exception.
+   sentRequest: Exception request.
+   toRecipients: cthomas1@hap.org,mveerama@hap.org
+   ccRecipients: mveerama@hap.org
+   smtpHost: mail.hap.org
+   fromAddress: mveerama@hap.org
+   firstMessage: Formulary Exception Request details are listed below
+   followUp: Please follow up with doctor for the above request.
+   medicaidToRecipients: cthomas1@hap.org,mveerama@hap.org
+   miLinkToRecipients: cthomas1@hap.org,mveerama@hap.org
+   lastMessage: The above details are also attached as pdf with this message.

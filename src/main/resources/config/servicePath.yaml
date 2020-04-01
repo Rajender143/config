@@ -1,0 +1,148 @@
+spring:
+  application:
+    name: servicePath
+
+service:
+  rest:
+    member:
+      claims:
+        getClaimDetail: /ccs/getclaimdetail
+        getClaimSummary: /ccs/getclaimsummary
+      cva:
+        getContractsByRecordId: /cvaFacade/get/contractsByRecordId-test
+        getMemberContract: /cvaFacade/get/getMemberContract
+        getBenefitGuide: /cvaFacade/get/getBenefitGuide
+        getProductBenefitDocuments: /benefitDoc/getProductBenefitDocuments
+        ridersByProductId: /cvaFacade/get/ridersByProductId
+        getANOCDetails: /cvaFacade/get/getANOCDetails
+        getCvaDocuments: /cvaFacade/get/cvaDocuments
+        getMemberObj: /cvaFacade/get/getMemberObj
+      memberContract:
+        getMemberContractView: /contractview/get/contract
+        getContractsByRecordIds: /contractview/get/contracts/byrecordids
+        getPrimaryContract: /contractview/get/primarycontract
+        getRecordNmbrByMbrId: /contractview/get/recordId/byMemberId
+        getPAContractsByRecordId: /contractview/get/PAContracts/by/recordId
+        getPrimaryPAContractByRecordId: /contractview/get/primary/PAContract/by/recordId
+        getAllMemberContracts: /contractview/get/contracts/byRecordId
+        getMemberCOBAndEligibilityAndProvider: /contractview/getMemberCOBAndEligibilityAndProvider
+        getRecordNmbrIncludeFutureByMbrId: /contractview/get/recordIdIncludeFuture/byMemberId
+      memberFacade:
+        searchMember: /member/search/nameAddress
+        getMember: /member/get/member
+        getMemberUnreadmsgcnt: /member/get/unreadmsgcnt
+        getMemberContracts: /member/contracts
+        memberContractHraHsa: /healthEquity/getMemberContractHraHsa
+        getReminderresults: /mhm/get/memhealth/reminders
+        getCommnPreference: /member/family/member/complete
+        getUpdateCommnPreference: /member/update/comm/preferences
+      authFacade:
+        getmemberRcdNo : /inquiry/memberid
+        getReferralId: /inquiry/referralId
+      benefitFacade:
+        getRecentMonths : /bam/data/recentChangesMonths
+        getRecentChangesPolicies : /bam/data/recentChangesPolicies
+        getPolicyHTML : /bam/getPolicyHtml
+        policyByIndex : /bam/data/policyByIndexList
+        categoricalIndex : /bam/allActiveCategories
+        categoricalListId : /bam/data/policyByCategoryList
+        searchKeywordCustom : /bam/searchKeywordCustom
+        keywords: /bam/keywords
+      providerFacade:
+        providerFacadeBasurl: /pcp/get/basic/search
+        providerPcpSelecturl: /pcp/get/pcpselect  
+      idCard:
+        getIdCardInfo: /idr/get/info 
+        getCreateOrder: /idr/create/order
+      cme:
+        getMemberEligView: /cme/get/eligibility
+        getOtherMemberEligView: /cme/get/othereligibility
+        getProductBenefitDocuments: /benefitDoc/getProductBenefitDocuments
+      cmc:
+        createNewMessage: /cmc/add/newMessage
+        getMemberContract: /cmc/memberContracts
+        getInboxMessages: /cmc/inboxMessages/display
+        fetchAllSentMessages: /cmc/sentMessages/display
+        deleteInboxMessages: /cmc/inboxMessages/delete
+        deleteSentMessages: /cmc/sentMessages/delete
+        replyPostMessages: /cmc/reply/post
+        displayMessageHistory: /cmc/response/view
+        sortInboxMessages: /cmc/inboxMessages/sort
+        sortSentItems: /cmc/sentMessages/sort
+      bpa:
+        getMultipleContracts: /bpa/hasMultipleContracts
+        getMemberEmail: /bpa/get/member/email
+        getCheckUserProfileExtn: /bpa/checkUserProfileExtn
+        getUpdateBillpayConsent: /bpa/updateBillpayConsent
+        getUserProfileExtn: /bpa/getUserProfileExtn
+        deiPayBill: /bpa/deiPayBill
+        updateAccountEstablished: /bpa/updateAccountEstablished
+        updatePaymentStatusForDEIByPaymentId: /bpa/updatePaymentStatusForDEIByPaymentId
+        updateDEIXref: /bpa/updateDEIXref
+        bpamethodupdateMemberEmail: /bpa/update/member/email
+        updateAutoPay: /bpa/updateAutoPay
+        invoiceTypeBySubscriberId: /bpa/getInvoiceTypeBySubscriberId
+        updateInvoiceType: /bpa/updateInvoiceType
+        deiPayment: /dei/get/payment/by/paymentId
+      security:
+        secureBrokerUrl: /security/getBroker
+        secureSignon: /security/signon
+      ssourl:
+        partnerUserId: /hapSso/provision/partnerUserId
+    util:
+      logTransactions: /portal/logTransactions
+      userDetail:
+        getByUserid: /userdetail/get/userProfileDetailByUserId
+        getUpdateGoGreenFlag: /userdetail/update/goGreenFlag
+        getGoGreenFlag: /userdetail/get/goGreenFlag
+        getEmailAddress: /userdetail/get/emailAddress
+        getHealthAssesstFlag: /userdetail/get/healthAssesstFlag
+        updateHealthAssesstFlag: /userdetail/update/healthAssesstFlag
+        getMpcPartnerChange: /userdetail/get/mpcPartnerChange
+        updateMpcPartnerChange: /userdetail/update/mpcPartnerChange        
+        updateNewMemberFlag: /userdetail/update/newMemberFlag
+      dfsDocumentum:  
+        getdocumentAsUrl: /dfs/getDocumentAsUrl
+        searchDocument: /dfs/searchDocument
+      ora:
+        logSoloRegistration: /ora/log/solo/registration
+        getOptOutMember: /ora/get/opt/out/member
+        getHapId: /ora/get/hap
+        verifyLdapRecordNotExists: /ora/verify/ldap/record/not/exists      
+        registerMember: /ora/register/member
+        verifyMember: /ora/verify/member
+        verifyUserIdAlreadyExisting: /ora/verify/userId/already/existing
+        createProspectLdapEntry:  /ora/create/prospect/LDAP/entry
+        getLDAPMemberProfile:  /ora/forgot/password/verify
+        verifyChallengeAnswer:  /ora/verify/challenge/answer
+        changeNewPassword:  /ora/change/password
+        getdeactivate:  /ora/deactivate
+        getProspectLDAPMemberProfile:  /ora/forgot/prospect/password/verify  
+        getchangeProspectPassword:  /ora/change/prospect/password
+        getMemberProfile:  /ora/getMemberProfile
+        getDEIXrefByProspectiveMemberID: /ora/deiXrefByProspectId
+        getAgentURL: /ora/getBroker
+        getBrokerFromFacets: /ora/getBrokerFromFacets
+        deactivate: /ora/deactivate
+      userProfileLookup:
+        getProspectProfileByCriteria:  /userProfileLookup/get/ProspectProfileByCriteria
+        getProfileByCriteria:  /userProfileLookup/get/ProfileByCriteria
+      securityModel:
+        searchUserById:  /securityModelFacade/get/searchUserById
+        validateStrongPassword:  /securityModelFacade/get/validateStrongPassword
+        changePassword: /securityModelFacade/changePassword
+        setFYPpassword: /securityModelFacade/setFypPassword
+      documentum:
+        getDocumentAsUrl: /documentum/getDocumentAsUrl
+    benefit:
+      cobFacade:
+        getMemberContracts: /cob/get/member/contracts
+        getDatedContractBySeqMemberId: /cob/get/dated/contract/member
+        getMemberOtherCoverages: /cob/get/member/other/coverage
+        getMostRecentMemberContract: /cob/get/recent/member/contact
+        getDependantsWithbyOtherCarrier: /cob/get/dependants/other/carrier
+        getOtherCoverageBySeqIdAndCarrier: /cob/get/other/coverage/seq/carrier
+        getMakeInquiry: /cob/make/inquiry
+        getAllCarriers: /cob/get/all/carriers
+      
+        

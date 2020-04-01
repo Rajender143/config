@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: cva
+
+application:
+  cva:
+    PLM_FLOW_ALLOW_ALL_AFTER_ALL: 07/31/2019:23:59:59
+    PLM_FLOW_CONFIGURED_DATE_AFTER_ON: 07/31/2018:23:59:59
+    NO_CONTRACT: noContract
+    CIGNA_NON_QUALIFIED_PRICE_ONLY: CIGNA NON-QUALIFIED PRICE ONLY
+    HMO: HMO
+    EPA: EPA
+    EPO: EPO
+    PPO: PPO
+    ASO: ASO
+    QHP: QHP
+    BENEFIT_CHANGES: BenefitChanges
+    POLICY_CHANGES: PolicyChanges
+    CONTRACT_CHANGES: ContractChanges
+    ASO_PACKAGE_PDF_LOCATION: /contracts/ASO/
+    HMO_PACKAGE_PDF_LOCATION: /contracts/HMO/
+    HFHS_PACKAGE_PDF_LOCATION: /contracts/HFHS_ASO/
+    QHP_PACKAGE_PDF_LOCATION: /contracts/QHP/
+    HMO_RIDER_PDF_LOCATION: /contracts/HMO/
+    AHL_RIDER_PDF_LOCATION: /contracts/AHL/
+    AHL_PACKAGE_PDF_LOCATION: /contracts/AHL/
+    PPO_RIDER_PDF_LOCATION: /contracts/PPO/
+    EPO_RIDER_PDF_LOCATION: /contracts/EPO/
+    EPA_RIDER_PDF_LOCATION: /contracts/EPA/
+    TPA_RIDER_PDF_LOCATION: /contracts/TPA/
+    HAP_RIDER_PDF_LOCATION: /contracts/HAP/
+    SOLO_PACKAGE_PDF_LOCATION: /contracts/SOLO/
+    SOLO_RIDER_PDF_LOCATION: /contracts/SOLO/
+    PA_PACKAGE_PDF_LOCATION: /contracts/PERS_ALLIANCE/
+    PA_RIDER_PDF_LOCATION: /contracts/PERS_ALLIANCE/
+    COMMERCIAL: Commercial
+    BENEFIT_GUIDE_LABEL: BenefitGuideName
+    BENEFIT_GUIDE_FILE: BenefitGuidePath
+    ADDITIONAL_CHANGES_LABEL: BenefitGuideChangesName
+    ADDITIONAL_CHANGES_FILE: BenefitGuideChangesPath
+    CONTRACT_PAGE: contractPage
+    CVA_DOC_TYPE:
+    CVA_BIZ_KEY:
+    REQUIRE_ENCRYPTION_DECRYPTION: Y
+    NUMBER_OF_BYTES_FOR_PRIVATE_KEY: 32
+    REQUIRE_USER_ID_FLAG: Y
+    DEFAULT_PRIVATE_KEY_32: avHyUxG3Z6sWRa/rsC0Vt3ZimwAfcAsa
+    DEFAULT_ALGORITHM_128: AES
+    DEFAULT_ALGORITHM_56: DES
+    DEFAULT_PRIVATE_KEY: avHyUxG3Z6sWRa/rsC0Vt3ZimwAfcAsa
+    CVA_BENEFIT_GUIDE: benefitGuide
+    CVA_SCHEDULE_PAGE: schedulePage
+    CVA_MEM_RIDERS: memberRider
+    CVA_SBC: sbc
+    CVA_BENEFIT_RIDERS: benefitRider
+    PLM_FILE_PATH: /membernew/eligibility/cva/getPdfDocument?
+    NO_PDF: noPdf
+    VALIDATION_MESSAGE: validationMessage
+    bamURL: /bam/index.do
+    DIRECT_PHARMACY_REIMBURSEMENT: Direct Pharmacy Reimbursement Form (PDF)
+    DIRECT_PHARMACY_LINK: /contracts/FORMS/COMM_Pharmacy_Reimbursement.pdf
+    DIRECT_MEDICAL_REIMBURSEMENT: Direct Reimbursement Form – Medical Claim (PDF)
+    DIRECT_MEDICAL_LINK: /contracts/FORMS/Comm_Medical_Reimbursement.pdf
+    HEALTH_REIMBURSEMENT: Reimbursement Form for Health Care Services Provided Outside the U.S. (PDF)
+    HEALTH_REIMBURSEMENT_LINK: /contracts/FORMS/foreign_claims_reimbursement_form_commercial.pdf
+    AUTHORIZATION_FORM: Authorization for HAP to Release Personal and Health Information (PDF)
+    AUTHORIZATION_FORM_LINK: https://www.hap.org/-/media/files/hap/medicare/pdfs/release-form.pdf?la=en
+    AUTHORIZATION_FORM_DES: give HAP permission to release personal health information to those you approve
+    AUTOMACTIC_WITHDRAWAL_FORM: Authorization for Automatic Withdrawal (PDF)
+    AUTOMACTIC_WITHDRAWAL_FORM_LINK: https://www.hap.org/-/media/files/hap/medicare/2018/pdfs/automatic-withdrawal-form.pdf?la=en
+    AUTOMACTIC_WITHDRAWAL_FORM_DES: give HAP permission for automatic withdrawals
+    NOCONTRACTPLM: nocontractplm
+    
